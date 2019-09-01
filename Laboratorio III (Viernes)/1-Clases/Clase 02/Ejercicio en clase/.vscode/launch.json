@@ -4,17 +4,14 @@
     // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-      {
-        "type": "node",
-        "request": "launch",
-        "name": "Inicio",
-        "program": "${workspaceFolder}/inicio.js"
-      },
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${file}"
+            "name": "Clase 02",
+            "program": "${workspaceFolder}\\clase02-01.js",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
         }
     ]
 }
