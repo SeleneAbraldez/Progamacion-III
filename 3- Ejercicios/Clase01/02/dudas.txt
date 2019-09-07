@@ -1,1 +1,0 @@
--eje 19 no muestra string padre, ni toma los colores de padre

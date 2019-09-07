@@ -1,0 +1,6 @@
+01
+-ej8 encuentro en internet una biblioteca que hace exactamente eso o una forma rE complicada de hacerlo
+-ej14: preguntar si es asociativo y si conceptos estan bien
+02
+-eje 19 no muestra string padre, ni toma los colores de padre
+03

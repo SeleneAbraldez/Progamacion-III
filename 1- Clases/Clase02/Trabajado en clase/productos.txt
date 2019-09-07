@@ -1,0 +1,2 @@
+Nombre: Fruta - Codigo de Barras: 23456789
+Nombre: Sandia - Codigo de Barras: 432423423
