@@ -3,12 +3,12 @@
 function Leer($ruta){
     $retorno = 0;
     $archivo = fopen($ruta, "r");
-    $datos = fread($archivo, filesize("saluto.txt"));
+    $datos = fread($archivo, filesize($ruta));
 
     echo $datos. "<br>";
 
     if($datos){
-        echo "Archivo leido exitosamente <3 <br>";
+        //echo "Archivo leido exitosamente <3 <br>";
         $retorno = 1;
     }else {
         echo "Error en la lectura de archivo.";

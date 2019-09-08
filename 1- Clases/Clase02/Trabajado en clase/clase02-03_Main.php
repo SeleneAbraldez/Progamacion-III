@@ -1,9 +1,10 @@
 <?php
 require_once "clase02-03_Producto.php";
 
-$op = $_POST["opc"];
-$nombre = $_POST["nombre"];
-$codiBarra = $_POST["codiBarra"];
+//$op = $_POST["opc"];
+$op = 3;
+//$nombre = $_POST["nombre"];
+//$codiBarra = $_POST["codiBarra"];
 
 switch ($op) {
     case 1:
@@ -21,8 +22,11 @@ switch ($op) {
     break;
 
     case 3:
-        $producto = new Producto($nombre, $codiBarra);
-        echo Producto::TraerTodosProductos();
+        $aProd = Producto::TraerTodosProductos();
+        foreach($aProd as $productos)
+        {
+            echo $productos->ToString() . "<br>";
+        }
     break;
     
     default:

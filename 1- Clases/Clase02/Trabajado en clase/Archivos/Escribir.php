@@ -8,7 +8,7 @@ function Escribir($ruta, $datos){
     $cant = fwrite($archivo, $datos);
 
     if($cant){
-        echo "Archivo creado exitosamente <3 <br>";
+        //echo "Archivo creado exitosamente <3 <br>";
         $retorno = 1;
     }else {
         echo "Error en la creacion de archivo.";

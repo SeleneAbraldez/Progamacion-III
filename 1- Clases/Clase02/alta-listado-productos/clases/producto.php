@@ -12,6 +12,14 @@ class Producto{
         }       
     }
 
+    public function GetNombre(){
+        return $this->_nombre;
+    }
+
+    public function GetCodBarra(){
+        return $this->_codiBarra;
+    }
+
     public function ToString(){
         return $this->_nombre.  " - ". $this->_codiBarra . "\n";
     }
@@ -31,13 +39,17 @@ class Producto{
         return $retorno;
     }
 
-    public static function TraerTodosProductos() : array {
+    public static function TraerTodosLosProductos() : array {
         $retorno = [];
         $ruta = "productos.txt";
 
         $archivo = fopen($ruta, "r");
         while(!feof($archivo)){
             $datos = fgets($archivo);
+            if($datos=="")
+            {
+                continue;
+            }
             $elemento = explode(" - ", $datos);
             $produ = new Producto($elemento[0], $elemento[1]);
             array_push($retorno, $produ);
