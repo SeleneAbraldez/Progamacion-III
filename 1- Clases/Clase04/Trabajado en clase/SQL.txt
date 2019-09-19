@@ -1,0 +1,32 @@
+--Crear--
+INSERT INTO `usuarixs`(`nombre`, `apellido`, `clave`, `perfil`, `estado`) VALUES ('selene','abraldez','pantufla',1,1)
+
+
+--Modificar xid--
+UPDATE `usuarixs` SET `nombre`='selene_m',`apellido`='abra_m',`clave`='pantufla_m',`perfil`=0,`estado`=0 WHERE id=1
+
+--Traer elementos por id--
+SELECT * FROM `usuarixs` WHERE id=1
+--Traer elementos por estado--
+SELECT * FROM `usuarixs` WHERE estado=0
+
+--Traer TODOS los elementos--
+SELECT * FROM `usuarixs`
+
+--Borrar xid--
+DELETE FROM `usuarixs` WHERE id=1
+
+
+
+********
+
+
+
+INSERT INTO `productos`(`codigo_barra`, `nombre`, `path_foto`) VALUES (123,'gato',null)
+
+UPDATE `productos` SET `codigo_barra`=456,`nombre`='zorro' WHERE id=1
+
+SELECT * FROM `productos` WHERE id=1
+SELECT * FROM `productos`
+
+DELETE FROM `productos` WHERE id=1
