@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "e6c645c8-5e8c-423f-801e-c050e19eb438",
+		"name": "Usuarix",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Agregar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "?op=agregarUsu&nombreAgre=Pepa&apellidoAgre=Pig&claveAgre=123&perfilAgre=2&estadoAgre=4&mailAgre=falso@hotmail.com",
+					"query": [
+						{
+							"key": "op",
+							"value": "agregarUsu"
+						},
+						{
+							"key": "nombreAgre",
+							"value": "Pepa"
+						},
+						{
+							"key": "apellidoAgre",
+							"value": "Pig"
+						},
+						{
+							"key": "claveAgre",
+							"value": "123"
+						},
+						{
+							"key": "perfilAgre",
+							"value": "2"
+						},
+						{
+							"key": "estadoAgre",
+							"value": "4"
+						},
+						{
+							"key": "mailAgre",
+							"value": "falso@hotmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar Todxs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
