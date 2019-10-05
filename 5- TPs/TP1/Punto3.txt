@@ -1,0 +1,17 @@
+1.SELECT `pNumero`, `pNombre`, `Precio`, `Tamaño` FROM `productos` ORDER BY pNombre ASC
+2.SELECT `Numero`, `Nombre`, `Domicilio`, `Localidad` FROM `provedores` WHERE Localidad='Quilmes'
+3.SELECT `Numero`, `pNumero`, `Cantidad` FROM `envios` WHERE Cantidad>=200 && Cantidad<=300
+4.SELECT SUM(`Cantidad`) FROM `envios` //3280
+5.SELECT `pNumero` FROM `envios` LIMIT 3
+6.SELECT provedores.Nombre,productos.pNombre FROM provedores INNER JOIN envios ON provedores.Numero =envios.Numero INNER JOIN productos ON envios.pNumero=productos.pNumero
+7.SELECT Numero, (envios.Cantidad * productos.Precio) AS Total FROM envios,productos WHERE envios.pNumero = productos.pNumero GROUP BY Numero
+8.SELECT `Cantidad` FROM `envios` WHERE Numero=102 && pNumero = 1
+9.SELECT envios.pNumero, provedores.Localidad FROM `envios` INNER JOIN `provedores` ON envios.Numero=provedores.Numero WHERE Localidad='Avellaneda'
+10.SELECT `Numero`, `Nombre`, `Domicilio`, `Localidad` FROM `provedores` WHERE Localidad LIKE '%I%' OR Nombre LIKE '%I%'
+11INSERT INTO `productos`(`pNumero`, `pNombre`, `Precio`, `Tamaño`) VALUES (4,'Chocolate','25.35','Chico')
+12.INSERT INTO `provedores`(`Numero`) VALUES (103) //Interpreto que solo hay que llenar el numero ya que es el unico que en la consigna se aclara que no debe ser nulo
+13.INSERT INTO `provedores`(`Numero`, `Nombre`, `Domicilio`, `Localidad`) VALUES (107,'Rosales','Rosales','La Plata')
+14.UPDATE `productos` SET `Precio`='97.50' WHERE Tamaño='Grande'
+15.UPDATE `productos` INNER JOIN `envios` ON productos.pNumero = envios.pNumero SET productos.Tamaño = "Mediano" WHERE productos.Tamaño = "Chico" && envios.Cantidad >= 300
+16.DELETE FROM `productos` WHERE pNumero='1'
+17.DELETE FROM `provedores` WHERE NOT EXISTS(SELECT * FROM envios WHERE envios.Numero = provedores.Numero) //resulta en borrar el que ingresamos en el 12 y y 13

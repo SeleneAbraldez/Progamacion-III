@@ -1,0 +1,23 @@
+----------Proveedores
+
+INSERT INTO `provedores`(`Numero`, `Nombre`, `Domicilio`, `Localidad`) VALUES (100,'Perez','Peron 876','Quilmes')
+INSERT INTO `provedores`(`Numero`, `Nombre`, `Domicilio`, `Localidad`) VALUES (101,'Gimenez','Mitre 750','Avellaneda')
+INSERT INTO `provedores`(`Numero`, `Nombre`, `Domicilio`, `Localidad`) VALUES (103,'Aguirre','Boedo 634','Bernal')
+
+
+-----------Productos
+
+INSERT INTO `productos`(`pNumero`, `pNombre`, `Precio`, `Tamaño`) VALUES (1,'Caramelos',1.5,'Chico')
+INSERT INTO `productos`(`pNumero`, `pNombre`, `Precio`, `Tamaño`) VALUES (2,'Cigarrillos',45.89,'Mediano')
+INSERT INTO `productos`(`pNumero`, `pNombre`, `Precio`, `Tamaño`) VALUES (3,'Gaseosa',15.80,'Grande')
+
+
+-----------Envios
+
+INSERT INTO `envios`(`Numero`, `pNumero`, `Cantidad`) VALUES (100,1,500)
+INSERT INTO `envios`(`Numero`, `pNumero`, `Cantidad`) VALUES (100,2,1500)
+INSERT INTO `envios`(`Numero`, `pNumero`, `Cantidad`) VALUES (100,3,100)
+INSERT INTO `envios`(`Numero`, `pNumero`, `Cantidad`) VALUES (101,2,55)
+INSERT INTO `envios`(`Numero`, `pNumero`, `Cantidad`) VALUES (101,3,225)
+INSERT INTO `envios`(`Numero`, `pNumero`, `Cantidad`) VALUES (102,1,600)
+INSERT INTO `envios`(`Numero`, `pNumero`, `Cantidad`) VALUES (102,3,300)

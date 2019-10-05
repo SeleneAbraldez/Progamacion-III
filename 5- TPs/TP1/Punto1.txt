@@ -1,0 +1,5 @@
+Creo una nueva base llamada utn, que dentro creamos envio, productos, provedores.
+Si es valor es PK en indice selecciono PRIMARY.
+Si es NOT NULL no marco la opcion de nulo, para que sea obligatoria.
+Si es numerica paso INT, si es cadena VARCHAR y si es flotante FLOAT.
+
