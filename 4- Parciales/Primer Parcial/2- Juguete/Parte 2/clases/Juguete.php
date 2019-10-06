@@ -155,7 +155,7 @@ class Juguete implements IParte1, IParte2
     //creo una funcion para que me traiga un juegute particular para el moficar
     public function TraerId($id)
     {
-        $usuario = null;
+        $jugueteRet = null;
         $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso();
         $consulta = $objetoAccesoDato->RetornarConsulta("SELECT * FROM juguetes WHERE id=:id");
         $consulta->bindValue(':id',  $id, PDO::PARAM_INT);

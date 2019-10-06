@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "b7fe79da-02e0-495e-90c7-3e50a65e3b4a",
+		"name": "PP3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AgregarSFoto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo",
+							"value": "Marciano",
+							"type": "text"
+						},
+						{
+							"key": "planeta",
+							"value": "Marte",
+							"type": "text"
+						},
+						{
+							"key": "velocidad",
+							"value": "45",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Selene-Prog/Parciales/Ovnis/AgregarOvniSonFoto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Selene-Prog",
+						"Parciales",
+						"Ovnis",
+						"AgregarOvniSonFoto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AgregarCFto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo",
+							"value": "Lunar",
+							"type": "text"
+						},
+						{
+							"key": "planeta",
+							"value": "Luna",
+							"type": "text"
+						},
+						{
+							"key": "velocidad",
+							"value": "456",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/D:/selene/Pictures/Saved Pictures/Fondos/pixel_art__saturn_in_space_by_corykeks-d83rnm0.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Selene-Prog/Parciales/Ovnis/AgregarOvni.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Selene-Prog",
+						"Parciales",
+						"Ovnis",
+						"AgregarOvni.php"
+					],
+					"query": [
+						{
+							"key": "tipo",
+							"value": "Lunar",
+							"disabled": true
+						},
+						{
+							"key": "planeta",
+							"value": "Luna",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "multipart/form-data"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo",
+							"value": "Venis",
+							"type": "text"
+						},
+						{
+							"key": "planeta",
+							"value": "Venus",
+							"type": "text"
+						},
+						{
+							"key": "velocidad",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/D:/selene/Pictures/Saved Pictures/Fondos/pixel-art-bridge-night-cc-1680x1050.jpg"
+						},
+						{
+							"key": "id",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Selene-Prog/Parciales/Ovnis/ModificarOvni.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Selene-Prog",
+						"Parciales",
+						"Ovnis",
+						"ModificarOvni.php"
+					],
+					"query": [
+						{
+							"key": "tipo",
+							"value": "Lunar",
+							"disabled": true
+						},
+						{
+							"key": "planeta",
+							"value": "Luna",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
