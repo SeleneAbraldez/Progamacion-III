@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "a8684d8d-b9d2-467a-b588-f33a8f84fe53",
+		"name": "PP2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AgregarSinFoto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo",
+							"value": "Muñeca",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "300",
+							"type": "text"
+						},
+						{
+							"key": "pais",
+							"value": "Chile",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Selene-Prog/Parciales/Jueguetes/AgregarJugueteSinFoto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Selene-Prog",
+						"Parciales",
+						"Jueguetes",
+						"AgregarJugueteSinFoto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verificar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Selene-Prog/Parciales/Jueguetes/VerificarJuguete.php?tipo=Pez&pais=Chile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Selene-Prog",
+						"Parciales",
+						"Jueguetes",
+						"VerificarJuguete.php"
+					],
+					"query": [
+						{
+							"key": "tipo",
+							"value": "Pez"
+						},
+						{
+							"key": "pais",
+							"value": "Chile"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AgregarCFoto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo",
+							"value": "Cartas",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "6000",
+							"type": "text"
+						},
+						{
+							"key": "pais",
+							"value": "Argentina",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/D:/selene/Pictures/Saved Pictures/66290520_176273753389096_1135772490467901440_n.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Selene-Prog/Parciales/Jueguetes/AgregarJuguete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Selene-Prog",
+						"Parciales",
+						"Jueguetes",
+						"AgregarJuguete.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModificarcFto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo",
+							"value": "Cartas",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "6000",
+							"type": "text"
+						},
+						{
+							"key": "pais",
+							"value": "Argentina",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/D:/selene/Pictures/Saved Pictures/66290520_176273753389096_1135772490467901440_n.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Selene-Prog/Parciales/Jueguetes/AgregarJuguete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Selene-Prog",
+						"Parciales",
+						"Jueguetes",
+						"AgregarJuguete.php"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
