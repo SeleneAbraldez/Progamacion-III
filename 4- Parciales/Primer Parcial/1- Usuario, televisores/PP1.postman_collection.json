@@ -9,29 +9,35 @@
 			"name": "SaveTele",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "formdata",
 					"formdata": [
 						{
 							"key": "tipo",
-							"value": "",
+							"value": "4k",
 							"type": "text"
 						},
 						{
 							"key": "precio",
-							"value": "",
+							"value": "900000",
 							"type": "text"
 						},
 						{
 							"key": "pais",
-							"value": "",
+							"value": "Argentina",
 							"type": "text"
 						},
 						{
 							"key": "foto",
-							"value": "",
-							"type": "text"
+							"type": "file",
+							"src": "/D:/selene/Pictures/Saved Pictures/Fondos/tumblr_ogo8pmbtHX1ubhshuo1_1280.jpg"
 						}
 					]
 				},
@@ -55,7 +61,13 @@
 			"name": "MoficarTele",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "formdata",
 					"formdata": [
@@ -76,12 +88,12 @@
 						},
 						{
 							"key": "foto",
-							"value": "falsa.jpg",
-							"type": "text"
+							"type": "file",
+							"src": "/D:/selene/Pictures/Saved Pictures/BoJack4x06.png"
 						},
 						{
 							"key": "id",
-							"value": "5",
+							"value": "10",
 							"type": "text"
 						}
 					]
@@ -148,7 +160,7 @@
 					"formdata": [
 						{
 							"key": "tipo",
-							"value": "Lsd",
+							"value": "4k",
 							"type": "text"
 						},
 						{
