@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "489fd0fe-40ec-405e-9adc-74b49bb80a2e",
+		"name": "PP1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SaveTele",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "pais",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Selene-Prog/Parciales/Usuarios/AgregarTelevisor.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Selene-Prog",
+						"Parciales",
+						"Usuarios",
+						"AgregarTelevisor.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MoficarTele",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo",
+							"value": "Lsd",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "50000",
+							"type": "text"
+						},
+						{
+							"key": "pais",
+							"value": "Mexico",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"value": "falsa.jpg",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Selene-Prog/Parciales/Usuarios/ModificarTelevisor.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Selene-Prog",
+						"Parciales",
+						"Usuarios",
+						"ModificarTelevisor.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filtrado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo",
+							"value": "Curvo",
+							"type": "text"
+						},
+						{
+							"key": "pais",
+							"value": "Chile",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Selene-Prog/Parciales/Usuarios/TelevisorFiltrado.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Selene-Prog",
+						"Parciales",
+						"Usuarios",
+						"TelevisorFiltrado.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo",
+							"value": "Lsd",
+							"type": "text"
+						},
+						{
+							"key": "accion",
+							"value": "borrar",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Selene-Prog/Parciales/Usuarios/EliminarTelevisor.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Selene-Prog",
+						"Parciales",
+						"Usuarios",
+						"EliminarTelevisor.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTipo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Selene-Prog/Parciales/Usuarios/EliminarTelevisor.php?tipo=Curvo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Selene-Prog",
+						"Parciales",
+						"Usuarios",
+						"EliminarTelevisor.php"
+					],
+					"query": [
+						{
+							"key": "tipo",
+							"value": "Curvo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregar usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "clave",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "Pepito@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Selene-Prog/Parciales/Usuarios/UsuarioAlta.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Selene-Prog",
+						"Parciales",
+						"Usuarios",
+						"UsuarioAlta.php"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						},
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
