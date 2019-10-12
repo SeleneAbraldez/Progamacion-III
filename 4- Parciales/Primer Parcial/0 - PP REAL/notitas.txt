@@ -1,0 +1,4 @@
+Este es el parcial que entregue, intacto-
+Le falta el ultimo punto de la parte 3 y el integrado de la segunda funcion con la tercera.
+el postman por alguna razon requiere que no le agregues el content type (error que nos paso a todos?? por alguna razon, nadie entiende)
+Tambien tiene un problema recibiendo en la funcion verificarufologo creo, que tuve que hardcodear el mensaje porque a veces me lo recibia y a veces no, aunque el ok me lo recibia mas o menos bien
