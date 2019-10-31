@@ -1,0 +1,12 @@
+1
+probar el add en grupo por grupo y en grupo por partivcular
+vv
+
+2
+creedenciales poo que llame a verificadora
+generamos verificadores que sea una clase aparte, asi queda todo bonito y no esta el codigo en el index
+dentro de verificadora hago una funcion verificadora, que si es get avisa nada mas, si es post lllama
+a una funcion para saber si usuarix existe. si existe se fije si la cuenta es de admin o no, y avisa.
+vv
+
+3
