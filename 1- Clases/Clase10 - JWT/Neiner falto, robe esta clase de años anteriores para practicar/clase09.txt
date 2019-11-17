@@ -1,0 +1,42 @@
+                                              CLASE 09
+Ejercicio:
+ 1-Con el composer vamos a descargar no solo el slim sino tambien el firebase con el txt "jwt_slim"
+ 2-Generamos una carpeta nuestra , dentro de esa carpeta creamos el composer.json con el codigo de jwt_slim
+ 3-Desde la terminal , le doy "composer install" y ya se instalara todo
+ 4-Colocamos el "htacces"
+ 
+Dentro del index.php agregamso el "use \Firebase\JWT\JWT";
+ 1-Dentro de la ruta \crear , con el verbo POST nuestro primer json
+ 2-Generamos informacion de un usuario para guardar en un payload
+ 3-Creamos clave secreta
+
+ 4-Por post generamos un "\Verificar" , que va a recibir dentro del FormData nuestro token , internamente lo que hacemos
+   es tratar de decodificarlo , si se decodifico muestro mensaje de exito y si no , lanzo la excepcion y meustro el msj
+   que corresponda
+
+ 5-Generamos por Post un "\obtenerPayload"  que reciba el JWT como parametro pero que me retorne el contenido del payload
+   es decir el contenido del atributo "data" que nosotros creamos dentro del "Payload".
+ 
+ 6-Generamos un grupo dentro de nuestra api -> "/JWT" y dentro vamos a generar el verbo POST->el cual recibe:
+    nombre , apellido y division .
+    *Si el usuario existe , genero un jsw que lo retorno mas el codigo 200 que esta todo bien , si el usuario no existe
+     retorno un Json con el mensaje de error y el status 409;
+     Para determinar si existe o no existe el usuario vamos a crear nuestra clase usuario :
+     Metodo publico Verificar (estatico) recibe un usuario como parametro y va a devolver si el usuario existe o no a partir
+     de nuestro segundo metodo privado que es TraerTodos(estatico) que va a traer 3 usuarios hardcodeados
+     La funcion verificar va a retornar al verbo "true" o "false"
+
+  7-Le agregamos una funcion de middleware a nuestro verbo "verificar dentro del grupo "JWT" , el middleware va a verificar
+    si existe el "apellido" , el "nombre" y la "division" , si yo desde el postman no le paso ningun parametro , no tiene que llegar
+    a al verbo si no le paso "verbo" "apellido" y "division" , esto lo chequeo con el isset() , si no existe no llego a la verificacio
+    de usuario , es decir yo solo voy a verificar que le vamos a pasar los atributos nombre division y apellido desde el formdata,
+    NO EL CONTENIDO (el contenido se fija el verbo "verificar") por eso utilizamos el isset()
+    *Si existe "nombre,apellido y division" retorno true y sino , retorno error 409
+
+  8-El middleware 2 lo que va a hacer es verificar si el contendio de las variables son vacios o no , si son vacios no los
+    hago pasar y mando mensaje de error y que no llegue al verbo
+  9-Dentro del grupo "JWT" generamos un verbo POST  llamado mostrar , lo que hace es llamar a nuestro metodo "traerListado"
+    que esta en nuestra clase usuario y lo que hace este metodo es invocar al TraerTodos() y genera una tabla con todos
+    los usuarios y lo que retorna es el string con toda la tabla , pero lo voy a retornar si es que mi usuario tiene un token validp
+    es decir al verbo Mostrar() le paso el token que genere en el metodo anterior y valido 
+   
