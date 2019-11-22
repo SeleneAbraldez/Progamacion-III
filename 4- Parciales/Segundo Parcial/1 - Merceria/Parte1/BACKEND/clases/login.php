@@ -36,24 +36,21 @@ class login
 
         $std= new stdClass();
 
-        if(empty($token)  || $token===""){
-            $std->mensaje = "ERROR! - Token vacio";
-        }else{
-            try{
-                $decodificado=JWT::decode(
-                    $token,
-                    "claveSecreta",
-                    ['HS256']
-                );
-                $ok=true;
-            }
-            catch(Exception $e){
-              $std->mensaje = $e->getMessage();
-            }
+        try{
+            $decodificado=JWT::decode(
+                $token,
+                "claveSecreta",
+                ['HS256']
+            );
+            $ok = true;
+        }
+        catch(Exception $e){
+            $std->mensaje = $e->getMessage();
         }
 
         if($ok==true){
            $std->mensaje="Todo Ok";
+           $std->token=$decodificado;
            $retorno = $response->withJson($std, 200);
         }else{
             $objJson->Mensaje=$mensajeError;

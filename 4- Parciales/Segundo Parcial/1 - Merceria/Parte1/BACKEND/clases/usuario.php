@@ -87,6 +87,21 @@ class usuario
         return $usuarios;         
     }
 
+    // -verificar usu-
+    public static function ValidarUsu($correo, $clave)
+    {
+        $objetoAccesoDato = AccesoDatos::DameUnObjetoAcceso();
+        $consulta = $objetoAccesoDato->RetornarConsulta("SELECT * FROM usuarios WHERE correo=:correo AND clave=:clave");
+
+        $consulta->bindValue(':correo', $correo, PDO::PARAM_STR);
+        $consulta->bindValue(':clave', $clave, PDO::PARAM_STR);
+        $consulta->execute();
+
+        $usuario= $consulta->fetchObject('usuario');
+
+        return $usuario;
+    }
+
     //////////
 
 
