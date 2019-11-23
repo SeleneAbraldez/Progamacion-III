@@ -1,0 +1,513 @@
+{
+	"info": {
+		"_postman_id": "216bf3f6-a618-4564-9e99-38b8a13804f9",
+		"name": "SP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ListUsu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListMedias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/medias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						"medias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AgregarMedias",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "color",
+							"value": "violeta",
+							"type": "text"
+						},
+						{
+							"key": "marca",
+							"value": "sani",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "150",
+							"type": "text"
+						},
+						{
+							"key": "talle",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Usu",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "applica",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "correo",
+							"value": "juana@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "111",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "juana",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "palta",
+							"type": "text"
+						},
+						{
+							"key": "perfil",
+							"value": "propietario",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/D:/selene/Pictures/3305282a-4199-495f-b036-14f9df7c6adf.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginCC encargadx",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "clave",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "correo",
+							"value": "pepito@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "correo",
+							"value": "petto",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginCC propietarix",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "clave",
+							"value": "111",
+							"type": "text"
+						},
+						{
+							"key": "correo",
+							"value": "juana@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "correo",
+							"value": "petto",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VeriJTW",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/login?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQ1MzYwNDYsImRhdGEiOnsiSUQiOiIyIiwiY29ycmVvIjoianVhbmFAZ21haWwuY29tIiwiY2xhdmUiOiIxMTEiLCJub21icmUiOiJqdWFuYSIsImFwZWxsaWRvIjoicGFsdGEiLCJwZXJmaWwiOiJwcm9waWV0YXJpbyIsImZvdG8iOiJwYWx0YS4yMDA3MDcuanBnIn19.LqH5Jd3lMAVpEQ0VAdFHeeF339ghVNDFZ1ZlqLFp3JE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						"login"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQ0NTkyMjcsImRhdGEiOnsiSUQiOiIxIiwiY29ycmVvIjoicGVwaXRvQGdtYWlsLmNvbSIsImNsYXZlIjoiMTIzIiwibm9tYnJlIjoicGVwbyIsImFwZWxsaWRvIjoicGFsdGEiLCJwZXJmaWwiOiJlbmNhcmdhZG8iLCJmb3RvIjoicGFsdGEuMjEwMTU1LmpwZyJ9fQ.GgWwf7Q2O9XJb4b8oTNW5310RnIEtb5LExFBKs-kHj0",
+							"disabled": true
+						},
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQ1MzYwNDYsImRhdGEiOnsiSUQiOiIyIiwiY29ycmVvIjoianVhbmFAZ21haWwuY29tIiwiY2xhdmUiOiIxMTEiLCJub21icmUiOiJqdWFuYSIsImFwZWxsaWRvIjoicGFsdGEiLCJwZXJmaWwiOiJwcm9waWV0YXJpbyIsImZvdG8iOiJwYWx0YS4yMDA3MDcuanBnIn19.LqH5Jd3lMAVpEQ0VAdFHeeF339ghVNDFZ1ZlqLFp3JE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModMedias",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQ0NTkyMjcsImRhdGEiOnsiSUQiOiIxIiwiY29ycmVvIjoicGVwaXRvQGdtYWlsLmNvbSIsImNsYXZlIjoiMTIzIiwibm9tYnJlIjoicGVwbyIsImFwZWxsaWRvIjoicGFsdGEiLCJwZXJmaWwiOiJlbmNhcmdhZG8iLCJmb3RvIjoicGFsdGEuMjEwMTU1LmpwZyJ9fQ.GgWwf7Q2O9XJb4b8oTNW5310RnIEtb5LExFBKs-kHj0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQ0NTkyMjcsImRhdGEiOnsiSUQiOiIxIiwiY29ycmVvIjoicGVwaXRvQGdtYWlsLmNvbSIsImNsYXZlIjoiMTIzIiwibm9tYnJlIjoicGVwbyIsImFwZWxsaWRvIjoicGFsdGEiLCJwZXJmaWwiOiJlbmNhcmdhZG8iLCJmb3RvIjoicGFsdGEuMjEwMTU1LmpwZyJ9fQ.GgWwf7Q2O9XJb4b8oTNW5310RnIEtb5LExFBKs-kHj0",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "verde",
+							"type": "text"
+						},
+						{
+							"key": "marca",
+							"value": "saralin",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "800",
+							"type": "text"
+						},
+						{
+							"key": "talle",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Medias",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ID",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQ0NTkyMjcsImRhdGEiOnsiSUQiOiIxIiwiY29ycmVvIjoicGVwaXRvQGdtYWlsLmNvbSIsImNsYXZlIjoiMTIzIiwibm9tYnJlIjoicGVwbyIsImFwZWxsaWRvIjoicGFsdGEiLCJwZXJmaWwiOiJlbmNhcmdhZG8iLCJmb3RvIjoicGFsdGEuMjEwMTU1LmpwZyJ9fQ.GgWwf7Q2O9XJb4b8oTNW5310RnIEtb5LExFBKs-kHj0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Colores sin id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQ0NTkyMjcsImRhdGEiOnsiSUQiOiIxIiwiY29ycmVvIjoicGVwaXRvQGdtYWlsLmNvbSIsImNsYXZlIjoiMTIzIiwibm9tYnJlIjoicGVwbyIsImFwZWxsaWRvIjoicGFsdGEiLCJwZXJmaWwiOiJlbmNhcmdhZG8iLCJmb3RvIjoicGFsdGEuMjEwMTU1LmpwZyJ9fQ.GgWwf7Q2O9XJb4b8oTNW5310RnIEtb5LExFBKs-kHj0"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/listados/medias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						"listados",
+						"medias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQ1MzYwNDYsImRhdGEiOnsiSUQiOiIyIiwiY29ycmVvIjoianVhbmFAZ21haWwuY29tIiwiY2xhdmUiOiIxMTEiLCJub21icmUiOiJqdWFuYSIsImFwZWxsaWRvIjoicGFsdGEiLCJwZXJmaWwiOiJwcm9waWV0YXJpbyIsImZvdG8iOiJwYWx0YS4yMDA3MDcuanBnIn19.LqH5Jd3lMAVpEQ0VAdFHeeF339ghVNDFZ1ZlqLFp3JE"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/listados/medias/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						"listados",
+						"medias",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
