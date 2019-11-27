@@ -1,0 +1,418 @@
+{
+	"info": {
+		"_postman_id": "4b44e515-ff4f-4ef0-8ebd-7bc80feeda63",
+		"name": "SP Real",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Agregar Usu",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "applica",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "correo",
+							"value": "juana@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "111",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "juana",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "palta",
+							"type": "text"
+						},
+						{
+							"key": "perfil",
+							"value": "propietario",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/Public/Pictures/Sample Pictures/Koala.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListUsu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AgregarAuto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "color",
+							"value": "violeta",
+							"type": "text"
+						},
+						{
+							"key": "marca",
+							"value": "sani",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "150",
+							"type": "text"
+						},
+						{
+							"key": "modelo",
+							"value": "zarza",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Autos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/medias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						"medias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginCC propie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "clave",
+							"value": "123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "correo",
+							"value": "pepito@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "usuario",
+							"value": "{\"correo\": \"juana@gmail.com\",\"clave\": \"111\"}",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginCC Encagr",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "clave",
+							"value": "123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "correo",
+							"value": "pepito@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "usuario",
+							"value": "{\"correo\": \"juana@gmail.com\",\"clave\": \"111\"}",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verificar JTW",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/login?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQ1MzYwNDYsImRhdGEiOnsiSUQiOiIyIiwiY29ycmVvIjoianVhbmFAZ21haWwuY29tIiwiY2xhdmUiOiIxMTEiLCJub21icmUiOiJqdWFuYSIsImFwZWxsaWRvIjoicGFsdGEiLCJwZXJmaWwiOiJwcm9waWV0YXJpbyIsImZvdG8iOiJwYWx0YS4yMDA3MDcuanBnIn19.LqH5Jd3lMAVpEQ0VAdFHeeF339ghVNDFZ1ZlqLFp3JE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						"login"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQ0NTkyMjcsImRhdGEiOnsiSUQiOiIxIiwiY29ycmVvIjoicGVwaXRvQGdtYWlsLmNvbSIsImNsYXZlIjoiMTIzIiwibm9tYnJlIjoicGVwbyIsImFwZWxsaWRvIjoicGFsdGEiLCJwZXJmaWwiOiJlbmNhcmdhZG8iLCJmb3RvIjoicGFsdGEuMjEwMTU1LmpwZyJ9fQ.GgWwf7Q2O9XJb4b8oTNW5310RnIEtb5LExFBKs-kHj0",
+							"disabled": true
+						},
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQ1MzYwNDYsImRhdGEiOnsiSUQiOiIyIiwiY29ycmVvIjoianVhbmFAZ21haWwuY29tIiwiY2xhdmUiOiIxMTEiLCJub21icmUiOiJqdWFuYSIsImFwZWxsaWRvIjoicGFsdGEiLCJwZXJmaWwiOiJwcm9waWV0YXJpbyIsImZvdG8iOiJwYWx0YS4yMDA3MDcuanBnIn19.LqH5Jd3lMAVpEQ0VAdFHeeF339ghVNDFZ1ZlqLFp3JE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Auto",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "color",
+							"value": "violeta",
+							"type": "text"
+						},
+						{
+							"key": "marca",
+							"value": "sani",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "150",
+							"type": "text"
+						},
+						{
+							"key": "modelo",
+							"value": "zarza",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Auto Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQ2ODkyOTQsImRhdGEiOnsiaWQiOiI1IiwiY29ycmVvIjoibGF1cmFAZ21haWwuY29tIiwiY2xhdmUiOiIxMTEiLCJub21icmUiOiJwZWRybyIsImFwZWxsaWRvIjoicGFsdGEiLCJwZXJmaWwiOiJwcm9waWV0YXJpbyIsImZvdG8iOiJwYWx0YS4xNDExMjguanBnIn19.PNtgHVxxLjZB2E3mt5iEcKjRiwly8Ni7VcPj2bw2-2Q",
+							"type": "text"
+						},
+						{
+							"key": "auto",
+							"value": "{\"id\":\"3\",\"color\":\"rosa\",\"marca\":\"frulas\",\"precio\":\"16000\",\"modelo\":\"zaraza\"}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/AbraldezSelene3A/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"AbraldezSelene3A",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "8607bcfd-156f-4244-b805-8df31e70a88c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "aef1a647-a391-4947-8648-d14a0f7ef612",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
